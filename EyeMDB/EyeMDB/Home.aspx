@@ -6,7 +6,7 @@
         <h4>JOIN TODAY AND ENJOY THESE MEMBERSHIP BENEFITS</h4>
         <ul>
             <li>Add movie entries</li>
-            <li>Add director entries</li>
+            <li>Add actor entries</li>
             <li>Ability to edit all existing pages</li>
             <li>Be a part of a passionate community!</li>
         </ul>

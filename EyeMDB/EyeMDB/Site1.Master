@@ -50,15 +50,15 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner">
                 <div class="item active">
-                  <img src="http://placehold.it/800x200" alt="...">
+                  <img src="http://www.bereitsgesehen.de/kritik/pics5/quantum1.jpg" alt="...">
 
                 </div>
                 <div class="item">
-                  <img src="http://placehold.it/800x200" alt="...">
+                  <img src="http://www.trickyladygaming.com/wp-content/uploads/2015/12/starwarsbanner.png" alt="...">
 
                 </div>
                 <div class="item">
-                  <img src="http://placehold.it/800x200" alt="...">
+                  <img src="https://irontwerkz.files.wordpress.com/2015/03/iron-man.jpg" alt="...">
 
                 </div>
               </div>
@@ -82,10 +82,10 @@
         
         <div>
              <div class="container" >            
-                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-	            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-	            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-	            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+                <a href="https://www.facebook.com/imdb"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+	            <a href="https://twitter.com/imdb"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+	            <a href="https://plus.google.com/+IMDb"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
                 <footer >Copyright © 2015-2016 Raymond Flanagan, Thomas Morley</footer>
             </div>
         </div>
