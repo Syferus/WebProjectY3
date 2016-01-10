@@ -30,7 +30,23 @@
                 </div>
             </div>
             <div class="container">
-                Actor Details
+                <div style="float: left; margin-left: 20px">
+                    <div>
+                        <label>Actor Name: </label>
+                        <asp:Label ID="lblActorName" runat="server" Text="-----"></asp:Label>
+                    </div>
+                    <div>
+                        <label>DOB: </label>
+                        <asp:Label ID="lblDob" runat="server" Text="--/--/--"></asp:Label>
+                    </div>
+                    <div>
+                        <label>Nationality:</label>
+                        <asp:Label ID="lblNationality" runat="server" Text="-----"></asp:Label>
+                    </div>
+                </div>
+                <div style="float: left; margin:0 0 20px 200px">
+                    <img src="http://placehold.it/200x200" alt="...">
+                </div>
             </div>
         </div>
     </div>

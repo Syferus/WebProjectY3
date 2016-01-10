@@ -30,7 +30,39 @@
                 </div>
             </div>
             <div class="container">
-                Movie Details
+                <div style="float: left; margin-left: 20px">
+                    <div>
+                        <label>Title: </label>
+                        <asp:Label ID="lblTitle" runat="server" Text="-----"></asp:Label>
+                    </div>
+                    <div>
+                        <label>Released: </label>
+                        <asp:Label ID="lblReleased" runat="server" Text="--/--/--"></asp:Label>
+                    </div>
+                    <div>
+                        <label>Studio:</label>
+                        <asp:Label ID="lblStudio" runat="server" Text="-----"></asp:Label>
+                    </div>
+                     <div>
+                        <label>Director:</label>
+                        <asp:Label ID="lblDirector" runat="server" Text="-----"></asp:Label>
+                    </div>
+                     <div>
+                        <label>Actors:</label>
+                        <asp:Label ID="lblActors" runat="server" Text="-----"></asp:Label>
+                    </div>
+                     <div>
+                        <label>Added By:</label>
+                        <asp:Label ID="lblAdded" runat="server" Text="-----"></asp:Label>
+                    </div>
+                     <div>
+                         <asp:DropDownList ID="ddlActors" runat="server"></asp:DropDownList>
+                         <asp:Button ID="btnAddActor" runat="server" Text="Add Actor" />
+                    </div>
+                </div>
+                <div style="float: left; margin:0 0 20px 200px">
+                    <img src="http://placehold.it/200x200" alt="...">
+                </div>
             </div>
         </div>
     </div>
