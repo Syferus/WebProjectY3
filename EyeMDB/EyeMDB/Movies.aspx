@@ -31,6 +31,7 @@
             </div>
             <div class="container">
                 <div style="float: left; margin-left: 20px">
+                    <asp:Label ID="lblErrors" runat="server" Text=""></asp:Label>
                     <div>
                         <label>Title: </label>
                         <asp:Label ID="lblTitle" runat="server" Text="-----"></asp:Label>
