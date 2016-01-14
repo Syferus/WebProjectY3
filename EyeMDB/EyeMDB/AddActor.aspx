@@ -29,7 +29,7 @@
 
                 <p>
                     <label>Image URL: </label>
-                    <asp:TextBox ID="TbxImage" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbxImage" runat="server"></asp:TextBox>
                 </p>
                 <p>
                     <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_OnClick" Text="Add Actor" class="btn btn-default"/>
