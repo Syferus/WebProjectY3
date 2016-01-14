@@ -12,7 +12,7 @@
                     <asp:Button ID="btnSearch" runat="server" Text="Search" class="btn btn-default"/>
                 </div>  
                 <div class="navbar-form navbar-right"> 
-                    <asp:Button ID="btnAdd" runat="server" Text="Add an Actor" class="btn btn-default" style="margin-right: 45px"/>
+                    <asp:Button ID="btnAdd" runat="server" Text="Add an Actor" class="btn btn-default" OnClick="btnAdd_OnClick" style="margin-right: 45px"/>
                 </div>
             </div>
             <div class="container">

@@ -25,13 +25,18 @@
                     <li><a href="Movies.aspx">Movies</a></li>
                     <li><a href="Actors.aspx">Actors</a></li>   
                 </ul>
-                <div class="navbar-form navbar-right">
+                <div id="login" runat="server" class="navbar-form navbar-right">
+                    <asp:Label ID="lblError" runat="server" Text=""></asp:Label>
                     <div class="form-group">
                         <asp:TextBox ID="txtUsername" runat="server" class="form-control" placeholder="Username"></asp:TextBox>
-                        <asp:TextBox ID="txtPassword" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server" class="form-control" placeholder="Password" TextMode="Password"></asp:TextBox>
                     </div>
-                    <asp:Button ID="btnLogIn" runat="server" Text="Log In" class="btn btn-default"/>
-                    <asp:Button ID="btnRegister" runat="server" Text="Register" class="btn btn-default"/>
+                    <asp:Button ID="btnLogIn" runat="server" Text="Log In" OnClick="btnLogIn_OnClick" class="btn btn-default"/>
+                    <asp:Button ID="btnRegister" runat="server" Text="Register" class="btn btn-default" OnClick="btnRegister_OnClick_"/>
+                </div>
+                <div id="loggedIn" runat="server" class="navbar-form navbar-right" Visible="False">
+                    <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
+                    <asp:Button ID="btnLogOut" runat="server" Text="Log Out" OnClick="btnLogOut_OnClick" class="btn btn-default" CausesValidation="False"/>
                 </div>
             </div>
         </div>

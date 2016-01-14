@@ -10,123 +10,114 @@
 namespace EyeMDB {
     
     
-    public partial class Movies {
+    public partial class WebForm1 {
         
         /// <summary>
-        /// txtMovies control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMovies;
+        protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
-        /// btnSearch control.
+        /// tbxUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.TextBox tbxUserName;
         
         /// <summary>
-        /// btnAdd control.
+        /// rfval_UserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_UserName;
         
         /// <summary>
-        /// btnEdit control.
+        /// tbxFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEdit;
+        protected global::System.Web.UI.WebControls.TextBox tbxFirstName;
         
         /// <summary>
-        /// lblErrors control.
+        /// rfval_FirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblErrors;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_FirstName;
         
         /// <summary>
-        /// lblTitle control.
+        /// tbxSurname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
+        protected global::System.Web.UI.WebControls.TextBox tbxSurname;
         
         /// <summary>
-        /// lblReleased control.
+        /// rfval_Surname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblReleased;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_Surname;
         
         /// <summary>
-        /// lblStudio control.
+        /// tbxEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblStudio;
+        protected global::System.Web.UI.WebControls.TextBox tbxEmail;
         
         /// <summary>
-        /// lblDirector control.
+        /// regexval_Email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDirector;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regexval_Email;
         
         /// <summary>
-        /// lblActors control.
+        /// tbxPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblActors;
+        protected global::System.Web.UI.WebControls.TextBox tbxPassword;
         
         /// <summary>
-        /// lblAdded control.
+        /// rfval_Password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAdded;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_Password;
         
         /// <summary>
-        /// ddlActors control.
+        /// btnReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlActors;
-        
-        /// <summary>
-        /// btnAddActor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddActor;
+        protected global::System.Web.UI.WebControls.Button btnReg;
     }
 }
