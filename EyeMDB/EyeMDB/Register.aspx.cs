@@ -45,6 +45,7 @@ namespace EyeMDB
                     conn.Open();
                     command.Connection = conn;
 
+<<<<<<< HEAD
                     //command.CommandText = "INSERT into UserTbl (UserName, FirstName, LastName, Email, Password) values ('" + tbxUserName.Text + "', '" +
                     //  tbxFirstName.Text + "', '" + tbxSurname.Text +
                     //  "', '" + tbxEmail.Text + "', '" + GetMd5Hash(tbxPassword.Text) + "')";
@@ -53,6 +54,12 @@ namespace EyeMDB
                     command.CommandText =
                         string.Format(
                             "SELECT UserName, Password from UserTbl where UserName='{0}' and Password='{1}'",
+=======
+                    // Checking if username is already in database
+                    command.CommandText =
+                        string.Format(
+                            "SELECT UserName, Password from UsersTbl where UserName='{0}' and UserPassword='{1}'",
+>>>>>>> 9b05d12d9fc442dceb522591bf8bbb845c2da872
                             tbxUserName.Text, GetMd5Hash(tbxPassword.Text));
 
                     queryResults = command.ExecuteReader();
@@ -69,7 +76,11 @@ namespace EyeMDB
                         queryResults.Close();
 
                         //insert data into the database
+<<<<<<< HEAD
                         command.CommandText = "INSERT into UserTbl (UserName, FirstName, LastName, Email, Password) values ('" + tbxUserName.Text + "', '" +
+=======
+                        command.CommandText = "INSERT into UserTbl values ('" + tbxUserName.Text + "', '" +
+>>>>>>> 9b05d12d9fc442dceb522591bf8bbb845c2da872
                                               tbxFirstName.Text + "', '" + tbxSurname.Text +
                                               "', '" + tbxEmail.Text + "', '" + GetMd5Hash(tbxPassword.Text) + "')";
                         command.ExecuteNonQuery();
