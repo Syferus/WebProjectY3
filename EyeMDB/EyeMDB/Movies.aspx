@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="container">
-                <asp:ListBox ID="lbxMovies" OnSelectedIndexChanged="lbxMovies_OnSelectedIndexChanged" AutoPostBack="True" runat="server"></asp:ListBox>
+                <asp:ListBox ID="lbxMovies" OnSelectedIndexChanged="lbxMovies_OnSelectedIndexChanged" CssClass="list-group" AutoPostBack="True" runat="server"></asp:ListBox>
             </div>
         </div>
 

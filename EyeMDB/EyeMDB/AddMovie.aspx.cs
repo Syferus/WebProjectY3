@@ -48,7 +48,7 @@ namespace EyeMDB
                     string img = string.IsNullOrEmpty(tbxMovieImage.Text) ? "" : tbxMovieImage.Text;
                     string values = PutAllTogether(del, tbxTitle.Text, tbxDirector.Text, tbxReleaseDate.Text, img, tbxStudio.Text, userName);
 
-                    command.CommandText = $"insert into MovieTbl (Title, Director, ReleaseDate, MovieImageURL) values ({values}) ";
+                    command.CommandText = $"insert into MovieTbl (Title, Director, ReleaseDate, MovieArtURL, Studio, AddedBy) values ({values}) ";
                     command.ExecuteNonQuery();
 
                 }
