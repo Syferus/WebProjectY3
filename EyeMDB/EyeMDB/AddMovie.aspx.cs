@@ -44,7 +44,7 @@ namespace EyeMDB
                         userName = ticket.Name;
                     }
 
-                    AddMovie.MovieDelegate del = new AddMovie.MovieDelegate(CombineText);
+                    MovieDelegate del = new MovieDelegate(CombineText);
                     string img = string.IsNullOrEmpty(tbxMovieImage.Text) ? "" : tbxMovieImage.Text;
                     string values = PutAllTogether(del, tbxTitle.Text, tbxDirector.Text, tbxReleaseDate.Text, img, tbxStudio.Text, userName);
 
