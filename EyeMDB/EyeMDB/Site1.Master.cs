@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Cryptography;
@@ -61,9 +62,16 @@ namespace EyeMDB
                 string md5Password = GetMd5Hash(txtPassword.Text);
 
                 //read data from the database - to check if the user name and password exist
-                command.CommandText =
-                    string.Format("select UserName, Password from UserTbl where UserName='{0}' and Password='{1}'",
-                        txtUsername.Text, md5Password);
+  //              command.CommandText =
+       //             string.Format("select UserName, Password from UserTbl where UserName='{0}' and Password='{1}'",
+         //               txtUsername.Text, md5Password);
+
+                command.CommandText = "SELECT UserName, Password from UserTbl where UserName = @uName and Password = @uPassword";
+
+                command.Parameters.Add("@uName", SqlDbType.VarChar);
+                command.Parameters["@uName"].Value = txtUsername.Text;
+
+                command.Parameters.AddWithValue("@uPassword", md5Password);
 
                 queryResults = command.ExecuteReader();
 
