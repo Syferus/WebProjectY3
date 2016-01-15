@@ -76,13 +76,13 @@ namespace EyeMDB {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_Surname;
         
         /// <summary>
-        /// TbxImage control.
+        /// tbxImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxImage;
+        protected global::System.Web.UI.WebControls.TextBox tbxImage;
         
         /// <summary>
         /// btnAdd control.

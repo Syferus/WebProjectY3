@@ -40,13 +40,13 @@ namespace EyeMDB {
         protected global::System.Web.UI.WebControls.Button btnAdd;
         
         /// <summary>
-        /// btnEdit control.
+        /// lbxMovies control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEdit;
+        protected global::System.Web.UI.WebControls.ListBox lbxMovies;
         
         /// <summary>
         /// lblErrors control.
@@ -112,21 +112,12 @@ namespace EyeMDB {
         protected global::System.Web.UI.WebControls.Label lblAdded;
         
         /// <summary>
-        /// ddlActors control.
+        /// imgMovie control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlActors;
-        
-        /// <summary>
-        /// btnAddActor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddActor;
+        protected global::System.Web.UI.WebControls.Image imgMovie;
     }
 }

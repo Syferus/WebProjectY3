@@ -9,31 +9,35 @@
                     
                 <p>
                     <label>Title: </label>
-                    <asp:TextBox ID="tbxActorName" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="rfval_UserName" ControlToValidate="tbxActorName" runat="server"
+                    <asp:TextBox ID="tbxTitle" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfval_Title" ControlToValidate="tbxTitle" runat="server"
                         ErrorMessage="*"></asp:RequiredFieldValidator>
                 </p>
                 <p>
                     <label>Release Date: </label>
-                    <asp:TextBox ID="tbxDOB" runat="server" TextMode="Date"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="rfval_Surname" ControlToValidate="tbxDOB" runat="server"
+                    <asp:TextBox ID="tbxReleaseDate" runat="server" TextMode="Date"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfval_ReleaseDate" ControlToValidate="tbxReleaseDate" runat="server"
                         ErrorMessage="*"></asp:RequiredFieldValidator>
                 </p>
 
                 <p>
                     <label>Director: </label>
-                    <asp:TextBox ID="tbxNationality" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="rfval_FirstName" ControlToValidate="tbxNationality" runat="server"
+                    <asp:TextBox ID="tbxDirector" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfval_Director" ControlToValidate="tbxDirector" runat="server"
                         ErrorMessage="*"></asp:RequiredFieldValidator>
                 </p>
                 <p>
                     <label>Studio: </label>
-                    <asp:TextBox ID="TbxImage" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="tbxStudio" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfval_Studio" ControlToValidate="tbxStudio" runat="server"
+                        ErrorMessage="*"></asp:RequiredFieldValidator>
                 </p>
 
                 <p>
                     <label>Movie Artwork: </label>
-                    <asp:TextBox ID="tbxPassword" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="tbxMovieImage" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfval_MovieImage" ControlToValidate="tbxMovieImage" runat="server"
+                        ErrorMessage="*"></asp:RequiredFieldValidator>
                 </p>
 
                 <p>

@@ -45,10 +45,6 @@ namespace EyeMDB
                     conn.Open();
                     command.Connection = conn;
 
-                    //command.CommandText = "INSERT into UserTbl (UserName, FirstName, LastName, Email, Password) values ('" + tbxUserName.Text + "', '" +
-                    //  tbxFirstName.Text + "', '" + tbxSurname.Text +
-                    //  "', '" + tbxEmail.Text + "', '" + GetMd5Hash(tbxPassword.Text) + "')";
-                    //command.ExecuteNonQuery();
                     // Checking if username is already in database
                     command.CommandText =
                         string.Format(

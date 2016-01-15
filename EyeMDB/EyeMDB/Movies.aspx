@@ -12,11 +12,11 @@
                     <asp:Button ID="btnSearch" runat="server" Text="Search" class="btn btn-default"/>
                 </div>  
                 <div class="navbar-form navbar-right"> 
-                    <asp:Button ID="btnAdd" runat="server" Text="Add a Movie" class="btn btn-default" style="margin-right: 45px"/>
+                    <asp:Button ID="btnAdd" runat="server" Text="Add a Movie" OnClick="btnAdd_OnClick" class="btn btn-default" style="margin-right: 45px"/>
                 </div>
             </div>
             <div class="container">
-                List Of Movies
+                <asp:ListBox ID="lbxMovies" OnSelectedIndexChanged="lbxMovies_OnSelectedIndexChanged" AutoPostBack="True" runat="server"></asp:ListBox>
             </div>
         </div>
 
@@ -26,7 +26,6 @@
                     <h4>Movie Details</h4>
                 </div>
                 <div class="navbar-form navbar-right">
-                     <asp:Button ID="btnEdit" runat="server" Text="Edit Movie Details" class="btn btn-default" style="margin-right: 45px"/>
                 </div>
             </div>
             <div class="container">
@@ -49,20 +48,16 @@
                         <asp:Label ID="lblDirector" runat="server" Text="-----"></asp:Label>
                     </div>
                      <div>
-                        <label>Actors:</label>
+                        <label>Lead Actor:</label>
                         <asp:Label ID="lblActors" runat="server" Text="-----"></asp:Label>
                     </div>
                      <div>
                         <label>Added By:</label>
                         <asp:Label ID="lblAdded" runat="server" Text="-----"></asp:Label>
                     </div>
-                     <div>
-                         <asp:DropDownList ID="ddlActors" runat="server"></asp:DropDownList>
-                         <asp:Button ID="btnAddActor" runat="server" Text="Add Actor" />
-                    </div>
                 </div>
                 <div style="float: left; margin:0 0 20px 200px">
-                    <img src="http://placehold.it/200x200" alt="...">
+                    <asp:Image ID="imgMovie" runat="server" />
                 </div>
             </div>
         </div>

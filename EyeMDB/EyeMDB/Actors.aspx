@@ -9,14 +9,14 @@
                     <div class="form-group">
                         <asp:TextBox ID="txtActors" runat="server" class="form-control" placeholder="Search Actors"></asp:TextBox>
                     </div>
-                    <asp:Button ID="btnSearch" runat="server" Text="Search" class="btn btn-default"/>
+                    <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_OnClick" class="btn btn-default"/>
                 </div>  
                 <div class="navbar-form navbar-right"> 
                     <asp:Button ID="btnAdd" runat="server" Text="Add an Actor" class="btn btn-default" OnClick="btnAdd_OnClick" style="margin-right: 45px"/>
                 </div>
             </div>
             <div class="container">
-                List Of Actors
+                <asp:ListBox ID="lbxActors" OnSelectedIndexChanged="lbxActors_OnSelectedIndexChanged" AutoPostBack="True" runat="server"></asp:ListBox>
             </div>
         </div>
 
@@ -26,7 +26,7 @@
                     <h4>Actor Details</h4>
                 </div>
                 <div class="navbar-form navbar-right">
-                     <asp:Button ID="btnEdit" runat="server" Text="Edit Actor Details" class="btn btn-default" style="margin-right: 45px"/>
+                    <asp:Label ID="lblErrors" runat="server" Text="" ForeColor="Red"></asp:Label>
                 </div>
             </div>
             <div class="container">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div style="float: left; margin:0 0 20px 200px">
-                    <img src="http://placehold.it/200x200" alt="...">
+                    <asp:Image ID="imgActor" runat="server" />
                 </div>
             </div>
         </div>

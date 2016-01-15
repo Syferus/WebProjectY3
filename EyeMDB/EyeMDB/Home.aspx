@@ -7,7 +7,7 @@
         <ul>
             <li>Add movie entries</li>
             <li>Add actor entries</li>
-            <li>Ability to edit all existing pages</li>
+            <li>View high quaility movie art work!</li>
             <li>Be a part of a passionate community!</li>
         </ul>
     </div>

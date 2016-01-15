@@ -18,12 +18,15 @@ namespace EyeMDB
         SqlDataReader reader;
 
 
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 foreach (string name in GetMovieNames())
-                    lblTitle.Text = name;
+                    lbxMovies.Items.Add(name);
+
+                GetSelectedMovieInformation("Star Wars The Force Awakens");
             }
         }
         private List<String> GetMovieNames()
@@ -56,6 +59,74 @@ namespace EyeMDB
             }
 
             return results;
-        } 
+        }
+
+        protected void btnAdd_OnClick(object sender, EventArgs e)
+        {
+            if(HttpContext.Current.Request.IsAuthenticated)
+                Response.Redirect("~/AddMovie.aspx");
+            else
+                Response.Redirect("~/Home.aspx");
+        }
+
+        private void GetSelectedMovieInformation(string movieName)
+        {
+            try
+            {
+                connnection = new SqlConnection(connString);
+                command.Connection = connnection;
+
+                connnection.Open();
+
+                command.CommandText = "SELECT * FROM [dbo].[MovieTbl] WHERE Title ='" + movieName + "'";
+
+                reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    try
+                    {
+                        lblTitle.Text = reader["Title"].ToString();
+                        lblReleased.Text = reader["ReleaseDate"].ToString();
+                        lblStudio.Text = reader["Studio"].ToString();
+                        lblDirector.Text = reader["Director"].ToString();
+                        imgMovie.ImageUrl = reader["MovieArtURL"].ToString();
+                        lblAdded.Text = reader["AddedBy"].ToString();
+
+                        string movieID = reader["MovieId"].ToString();
+                        int movieIDInt = Convert.ToInt32(movieID);
+                    }
+                    catch (Exception ex)
+                    {
+                        lblErrors.Text = ex.Message;
+                    }
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                lblErrors.Text = ex.Message;
+            }
+            finally
+            {
+                connnection.Close();
+            }
+        }
+
+        protected void lbxMovies_OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lbxMovies.SelectedIndex > -1)
+            {
+                string movieName = lbxMovies.SelectedItem.Value.ToString();
+
+                GetSelectedMovieInformation(movieName);
+            }
+        }
+
+        protected void btnSearch_OnClick(object sender, EventArgs e)
+        {
+            GetSelectedMovieInformation(txtMovies.Text);
+        }
     }
 }

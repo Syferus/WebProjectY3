@@ -22,76 +22,94 @@ namespace EyeMDB {
         protected global::System.Web.UI.WebControls.Label lblError;
         
         /// <summary>
-        /// tbxActorName control.
+        /// tbxTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxActorName;
+        protected global::System.Web.UI.WebControls.TextBox tbxTitle;
         
         /// <summary>
-        /// rfval_UserName control.
+        /// rfval_Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_UserName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_Title;
         
         /// <summary>
-        /// tbxDOB control.
+        /// tbxReleaseDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxDOB;
+        protected global::System.Web.UI.WebControls.TextBox tbxReleaseDate;
         
         /// <summary>
-        /// rfval_Surname control.
+        /// rfval_ReleaseDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_Surname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_ReleaseDate;
         
         /// <summary>
-        /// tbxNationality control.
+        /// tbxDirector control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxNationality;
+        protected global::System.Web.UI.WebControls.TextBox tbxDirector;
         
         /// <summary>
-        /// rfval_FirstName control.
+        /// rfval_Director control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_FirstName;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_Director;
         
         /// <summary>
-        /// TbxImage control.
+        /// tbxStudio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TbxImage;
+        protected global::System.Web.UI.WebControls.TextBox tbxStudio;
         
         /// <summary>
-        /// tbxPassword control.
+        /// rfval_Studio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbxPassword;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_Studio;
+        
+        /// <summary>
+        /// tbxMovieImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxMovieImage;
+        
+        /// <summary>
+        /// rfval_MovieImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfval_MovieImage;
         
         /// <summary>
         /// btnAdd control.
