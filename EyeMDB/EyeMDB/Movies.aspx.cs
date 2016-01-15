@@ -71,6 +71,7 @@ namespace EyeMDB
 
         private void GetSelectedMovieInformation(string movieName)
         {
+            int movieIDInt = 0;
             try
             {
                 connnection = new SqlConnection(connString);
@@ -94,7 +95,25 @@ namespace EyeMDB
                         lblAdded.Text = reader["AddedBy"].ToString();
 
                         string movieID = reader["MovieId"].ToString();
-                        int movieIDInt = Convert.ToInt32(movieID);
+                        movieIDInt = Convert.ToInt32(movieID);
+                    }
+                    catch (Exception ex)
+                    {
+                        lblErrors.Text = ex.Message;
+                    }
+                }
+
+                reader.Close();
+
+                command.CommandText = $"Select ActorName FROM [dbo].[ActorTbl] WHERE ActorId = '{movieIDInt}' ";
+
+                reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    try
+                    {
+                        lblActors.Text = reader["ActorName"].ToString();
                     }
                     catch (Exception ex)
                     {
